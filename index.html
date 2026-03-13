@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Site Profissional</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="description" content="Serviços profissionais de desenvolvimento web — sites responsivos, SEO e design moderno.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand" href="index.html"><i class="fas fa-rocket"></i> Meu Site</a>
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro"><i class="fas fa-moon"></i></button>
+            <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div>
+                    <h1>Manuel Macuaca — Informático, Desenvolvedor Web & Administrador de Sistemas</h1>
+                    <p>Sou desenvolvedor backend e frontend, trabalho com programação, administração de sistemas e soluções web completas. Crio aplicações escaláveis, APIs seguras e sites responsivos otimizados para performance e SEO.</p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="servicos.html">Ver Serviços</a>
+                        <a class="btn outline" href="contactos.html">Entrar em Contacto</a>
+                    </div>
+                </div>
+                <img class="hero-illus" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a3d7a2b0d78f8b9f4c6d7c9d1a9b4a8" alt="Design responsivo">
+            </div>
+        </section>
+
+        <section class="services container" aria-labelledby="servicesTitle">
+            <h2 id="servicesTitle">Serviços</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Sites sob medida, rápidos e fáceis de gerir.</p>
+                    <a href="servicos.html" class="card-link">Saiba mais →</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Design Responsivo</h3>
+                    <p>Experiência consistente em mobile, tablet e desktop.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-search"></i></div>
+                    <h3>SEO & Performance</h3>
+                    <p>Otimização para motores de busca e carregamento rápido.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about container">
+            <div class="about-grid">
+                <div>
+                    <h2>Sobre Mim</h2>
+                    <p>Olá, sou <strong>Manuel Macuaca</strong>. Tenho experiência como informático, desenvolvedor web (front-end e back-end) e administrador de sistemas. Trabalho com linguagens como JavaScript, Node.js, PHP, Python, e com bases de dados e infra-estrutura (MySQL, PostgreSQL, Linux, Docker).</p>
+                    <a class="btn" href="sobre.html">Ver formação & habilidades</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat"><strong>Desenvolvimento</strong><span>Front & Back</span></div>
+                    <div class="stat"><strong>Admin</strong><span>Sistemas & DevOps</span></div>
+                    <div class="stat"><strong>SEO</strong><span>Performance</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand footer-brand" href="index.html">Meu Site</a>
+                <p>Desenvolvemos experiências digitais profissionais e responsivas.</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p>Rua da Matola, 53 — Matola</p>
+                <p>+258 840 361 705</p>
+                <p><a href="mailto:manitomacuacua@gamil.com">manitomacuacua@gamil.com</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="anoAtual">2024</span> Meu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

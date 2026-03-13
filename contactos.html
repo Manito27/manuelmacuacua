@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactos — Meu Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html"><i class="fas fa-rocket"></i> Meu Site</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>Contacte-me</h1>
+      <p>Olá — eu sou <strong>Manuel Macuaca</strong>. Se tiver um projeto ou dúvida, envie uma mensagem abaixo e eu respondo o mais breve possível.</p>
+
+      <form class="contact-form" action="mailto:manitomacuacua@gamil.com" method="post" enctype="text/plain">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+        <button type="submit" class="btn primary">Enviar Mensagem</button>
+      </form>
+
+      <div style="margin-top:1.5rem;">
+        <h3>Informações</h3>
+        <p><strong>Telefone:</strong> +258 840 361 705</p>
+        <p><strong>Email:</strong> <a href="mailto:manitomacuacua@gamil.com">manitomacuacua@gamil.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">Meu Site</a>
+        <p>Desenvolvemos experiências digitais profissionais e responsivas.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>+258 840 361 705</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="anoAtual">2024</span> Meu Site. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
