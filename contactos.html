@@ -1,82 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contactos — Meu Site</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="index.html"><i class="fas fa-rocket"></i> Meu Site</a>
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contactos | Manuel Macuaca</title>
+    <meta name="description" content="Entre em contacto para orçamento, dúvidas ou propostas. Resposta rápida por e-mail ou telefone.">
+    <meta name="theme-color" content="#0ea5a4">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
 
-  <main class="container">
-    <section class="page">
-      <h1>Contacte-me</h1>
-      <p>Olá — eu sou <strong>Manuel Macuaca</strong>. Se tiver um projeto ou dúvida, envie uma mensagem abaixo e eu respondo o mais breve possível.</p>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Página inicial">
+          <span class="brand-mark" aria-hidden="true">MM</span>
+          <span class="brand-text">
+            <span class="brand-name">Manuel Macuaca</span>
+            <span class="brand-role">Web, Sistemas e DevOps</span>
+          </span>
+        </a>
 
-      <form class="contact-form" action="mailto:manitomacuacua@gamil.com" method="post" enctype="text/plain">
-        <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" required>
+        <nav class="site-nav" id="siteNav" data-nav aria-label="Navegação principal">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contactos.html">Contactos</a>
+        </nav>
 
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="email" required>
+        <div class="header-actions">
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Alternar tema" title="Alternar tema">
+            <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 13.2A8.4 8.4 0 0 1 10.8 3a7.7 7.7 0 1 0 10.2 10.2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M18.4 5.6l1.4-1.4M4.2 19.8l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
 
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
-
-        <button type="submit" class="btn primary">Enviar Mensagem</button>
-      </form>
-
-      <div style="margin-top:1.5rem;">
-        <h3>Informações</h3>
-        <p><strong>Telefone:</strong> +258 840 361 705</p>
-        <p><strong>Email:</strong> <a href="mailto:manitomacuacua@gamil.com">manitomacuacua@gamil.com</a></p>
+          <button class="icon-btn nav-btn" type="button" data-nav-toggle aria-controls="siteNav" aria-label="Abrir menu" aria-expanded="false" title="Menu">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="index.html">Meu Site</a>
-        <p>Desenvolvemos experiências digitais profissionais e responsivas.</p>
-      </div>
-      <div>
-        <h4>Links</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contato</h4>
-        <p>+258 840 361 705</p>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; <span id="anoAtual">2024</span> Meu Site. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+      <div class="nav-overlay" data-nav-overlay hidden></div>
+    </header>
 
-  <script src="script.js"></script>
-</body>
+    <main id="conteudo">
+      <section class="section">
+        <div class="container two-col">
+          <div class="card prose">
+            <h1>Contactos</h1>
+            <p>Se você tem um projeto, uma dúvida ou precisa de uma proposta, envie uma mensagem. Eu retorno assim que possível.</p>
+
+            <div class="contact-list" aria-label="Contactos diretos">
+              <a class="contact-item" href="mailto:manitomacuacua@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>manitomacuacua@gmail.com</span>
+              </a>
+
+              <a class="contact-item" href="tel:+258840361705">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 4h3l1 5-2 1c1.2 2.5 3.3 4.7 5.9 5.9l1-2 5 1v3c0 1.1-.9 2-2 2-9.4 0-17-7.6-17-17 0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>+258 840 361 705</span>
+              </a>
+
+              <div class="contact-item" role="note" aria-label="Localização">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 22s7-4.4 7-11a7 7 0 0 0-14 0c0 6.6 7 11 7 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 11.5a2.3 2.3 0 1 0 0-4.6 2.3 2.3 0 0 0 0 4.6Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Matola, Moçambique</span>
+              </div>
+            </div>
+
+            <p class="help">Dica: ao enviar o formulário, o site abre o seu cliente de e-mail com a mensagem pré-preenchida.</p>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Enviar mensagem</h2>
+
+            <form class="form" data-contact-form data-email-to="manitomacuacua@gmail.com" novalidate>
+              <div class="field">
+                <label class="label" for="nome">Nome *</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="field">
+                <label class="label" for="email">E-mail *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="field">
+                <label class="label" for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" autocomplete="off" placeholder="Ex.: Site institucional">
+              </div>
+
+              <div class="field">
+                <label class="label" for="mensagem">Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+              </div>
+
+              <div class="sr-only" aria-hidden="true">
+                <label for="website">Website</label>
+                <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <button class="btn primary" type="submit">Enviar</button>
+              <p class="help">Ou envie diretamente para <a href="mailto:manitomacuacua@gmail.com">manitomacuacua@gmail.com</a>.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-title">Manuel Macuaca</p>
+          <p>Desenvolvimento web e sistemas, com foco em performance, responsividade e manutenção simples.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+258840361705">+258 840 361 705</a></li>
+            <li><a href="mailto:manitomacuacua@gmail.com">manitomacuacua@gmail.com</a></li>
+            <li>Matola, Moçambique</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span data-year></span> Manuel Macuaca. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" data-to-top aria-label="Voltar ao topo" title="Topo">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="m7 10 5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="script.js" defer></script>
+  </body>
 </html>

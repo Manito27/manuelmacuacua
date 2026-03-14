@@ -1,117 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meu Site Profissional</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Manuel Macuaca | Desenvolvedor Web e Sistemas</title>
+    <meta name="description" content="Sites modernos e responsivos, APIs seguras e apoio em sistemas. Desenvolvimento web e DevOps com foco em performance e qualidade.">
+    <meta name="theme-color" content="#0ea5a4">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="theme-color" content="#2c3e50">
-    <meta name="description" content="Serviços profissionais de desenvolvimento web — sites responsivos, SEO e design moderno.">
-</head>
-<body>
-    <header class="site-header">
-        <div class="container header-row">
-            <a class="brand" href="index.html"><i class="fas fa-rocket"></i> Meu Site</a>
-            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro"><i class="fas fa-moon"></i></button>
-            <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
-                </ul>
-            </nav>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Página inicial">
+          <span class="brand-mark" aria-hidden="true">MM</span>
+          <span class="brand-text">
+            <span class="brand-name">Manuel Macuaca</span>
+            <span class="brand-role">Web, Sistemas e DevOps</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" id="siteNav" data-nav aria-label="Navegação principal">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contactos.html">Contactos</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Alternar tema" title="Alternar tema">
+            <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 13.2A8.4 8.4 0 0 1 10.8 3a7.7 7.7 0 1 0 10.2 10.2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M18.4 5.6l1.4-1.4M4.2 19.8l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <button class="icon-btn nav-btn" type="button" data-nav-toggle aria-controls="siteNav" aria-label="Abrir menu" aria-expanded="false" title="Menu">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
+      </div>
+
+      <div class="nav-overlay" data-nav-overlay hidden></div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <div>
-                    <h1>Manuel Macuaca — Informático, Desenvolvedor Web & Administrador de Sistemas</h1>
-                    <p>Sou desenvolvedor backend e frontend, trabalho com programação, administração de sistemas e soluções web completas. Crio aplicações escaláveis, APIs seguras e sites responsivos otimizados para performance e SEO.</p>
-                    <div class="hero-actions">
-                        <a class="btn primary" href="servicos.html">Ver Serviços</a>
-                        <a class="btn outline" href="contactos.html">Entrar em Contacto</a>
-                    </div>
-                </div>
-                <img class="hero-illus" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a3d7a2b0d78f8b9f4c6d7c9d1a9b4a8" alt="Design responsivo">
-            </div>
-        </section>
+    <main id="conteudo">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="kicker"><span class="kicker-dot" aria-hidden="true"></span>Disponível para projetos</div>
+            <h1>Sites rápidos, sistemas confiáveis e uma presença digital profissional.</h1>
+            <p>Trabalho com desenvolvimento web (front-end e back-end) e administração de sistemas. Entrego soluções responsivas, com boa performance e prontas para crescer.</p>
 
-        <section class="services container" aria-labelledby="servicesTitle">
-            <h2 id="servicesTitle">Serviços</h2>
-            <div class="cards">
-                <article class="card">
-                    <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites sob medida, rápidos e fáceis de gerir.</p>
-                    <a href="servicos.html" class="card-link">Saiba mais →</a>
-                </article>
-                <article class="card">
-                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>Design Responsivo</h3>
-                    <p>Experiência consistente em mobile, tablet e desktop.</p>
-                </article>
-                <article class="card">
-                    <div class="card-icon"><i class="fas fa-search"></i></div>
-                    <h3>SEO & Performance</h3>
-                    <p>Otimização para motores de busca e carregamento rápido.</p>
-                </article>
+            <div class="cta-row">
+              <a class="btn primary" href="contactos.html">Falar comigo</a>
+              <a class="btn ghost" href="servicos.html">Ver serviços</a>
             </div>
-        </section>
 
-        <section class="about container">
-            <div class="about-grid">
-                <div>
-                    <h2>Sobre Mim</h2>
-                    <p>Olá, sou <strong>Manuel Macuaca</strong>. Tenho experiência como informático, desenvolvedor web (front-end e back-end) e administrador de sistemas. Trabalho com linguagens como JavaScript, Node.js, PHP, Python, e com bases de dados e infra-estrutura (MySQL, PostgreSQL, Linux, Docker).</p>
-                    <a class="btn" href="sobre.html">Ver formação & habilidades</a>
-                </div>
-                <div class="about-stats">
-                    <div class="stat"><strong>Desenvolvimento</strong><span>Front & Back</span></div>
-                    <div class="stat"><strong>Admin</strong><span>Sistemas & DevOps</span></div>
-                    <div class="stat"><strong>SEO</strong><span>Performance</span></div>
-                </div>
+            <div class="tag-row" aria-label="Áreas principais">
+              <span class="tag">Front-end</span>
+              <span class="tag">Back-end</span>
+              <span class="tag">APIs</span>
+              <span class="tag">Linux & Docker</span>
+              <span class="tag">Performance</span>
             </div>
-        </section>
+          </div>
+
+          <aside class="hero-card" aria-label="Cartão de contacto rápido">
+            <div class="hero-card-top">
+              <div class="avatar" aria-hidden="true">MM</div>
+              <div>
+                <p class="hero-name">Manuel Macuaca</p>
+                <p class="hero-meta">Matola, Moçambique</p>
+              </div>
+            </div>
+
+            <div class="contact-list">
+              <a class="contact-item" href="mailto:manitomacuacua@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>manitomacuacua@gmail.com</span>
+              </a>
+
+              <a class="contact-item" href="tel:+258840361705">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 4h3l1 5-2 1c1.2 2.5 3.3 4.7 5.9 5.9l1-2 5 1v3c0 1.1-.9 2-2 2-9.4 0-17-7.6-17-17 0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>+258 840 361 705</span>
+              </a>
+            </div>
+
+            <div class="pill-list" aria-label="O que faço">
+              <span class="pill">Sites responsivos</span>
+              <span class="pill">APIs seguras</span>
+              <span class="pill">Deploy & manutenção</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="servicosTitulo">
+        <div class="container section-header">
+          <div>
+            <h2 id="servicosTitulo">Serviços</h2>
+            <p class="section-lead">Do design ao deploy: uma entrega completa, com foco em qualidade, velocidade e clareza.</p>
+          </div>
+          <a class="btn ghost" href="servicos.html">Ver detalhes</a>
+        </div>
+
+        <div class="container grid cols-3">
+          <article class="card">
+            <span class="badge">
+              <span class="kicker-dot" aria-hidden="true"></span>
+              Desenvolvimento Web
+            </span>
+            <h3 class="card-title">Sites e landing pages</h3>
+            <p>Interfaces modernas, acessíveis e otimizadas para mobile, tablet e desktop.</p>
+          </article>
+          <article class="card">
+            <span class="badge">
+              <span class="kicker-dot" aria-hidden="true"></span>
+              Back-end
+            </span>
+            <h3 class="card-title">APIs e integrações</h3>
+            <p>Integração com bases de dados, autenticação e serviços externos com boas práticas.</p>
+          </article>
+          <article class="card">
+            <span class="badge">
+              <span class="kicker-dot" aria-hidden="true"></span>
+              Sistemas
+            </span>
+            <h3 class="card-title">Deploy e manutenção</h3>
+            <p>Linux, Docker e rotinas de operação para deixar a solução estável e previsível.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sobreTitulo">
+        <div class="container two-col">
+          <div class="card prose">
+            <h2 id="sobreTitulo">Sobre mim</h2>
+            <p>Sou informático, desenvolvedor web e administrador de sistemas. Gosto de projetos bem definidos, com comunicação direta e entregas por etapas.</p>
+            <p>
+              Trabalho com JavaScript, Node.js, PHP e Python, além de bases de dados e infraestrutura.
+              Se precisa de um site profissional ou de uma API para o seu negócio, eu ajudo a tirar do papel.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="sobre.html">Ver perfil</a>
+              <a class="btn ghost" href="contactos.html">Pedir orçamento</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Como trabalho</h3>
+            <p>Um processo simples para manter rapidez e previsibilidade.</p>
+            <div class="pill-list" aria-label="Processo">
+              <span class="pill">1. Diagnóstico</span>
+              <span class="pill">2. Proposta</span>
+              <span class="pill">3. Implementação</span>
+              <span class="pill">4. Testes</span>
+              <span class="pill">5. Entrega</span>
+            </div>
+            <div class="cta-band compact">
+              <div class="cta-band-inner">
+                <div>
+                  <strong>Precisa de resposta rápida?</strong>
+                  <p>Envie uma mensagem e eu retorno assim que possível.</p>
+                </div>
+                <a class="btn primary" href="contactos.html">Contactar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <a class="brand footer-brand" href="index.html">Meu Site</a>
-                <p>Desenvolvemos experiências digitais profissionais e responsivas.</p>
-            </div>
-            <div>
-                <h4>Links</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Contato</h4>
-                <p>Rua da Matola, 53 — Matola</p>
-                <p>+258 840 361 705</p>
-                <p><a href="mailto:manitomacuacua@gamil.com">manitomacuacua@gamil.com</a></p>
-            </div>
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-title">Manuel Macuaca</p>
+          <p>Desenvolvimento web e sistemas, com foco em performance, responsividade e manutenção simples.</p>
         </div>
-        <div class="container footer-bottom">
-            <p>&copy; <span id="anoAtual">2024</span> Meu Site. Todos os direitos reservados.</p>
+
+        <div class="footer-col">
+          <h3>Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
         </div>
+
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+258840361705">+258 840 361 705</a></li>
+            <li><a href="mailto:manitomacuacua@gmail.com">manitomacuacua@gmail.com</a></li>
+            <li>Matola, Moçambique</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span data-year></span> Manuel Macuaca. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
-    <button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+    <button class="to-top" type="button" data-to-top aria-label="Voltar ao topo" title="Topo">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="m7 10 5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
 
-    <script src="script.js"></script>
-</body>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="script.js" defer></script>
+  </body>
 </html>
